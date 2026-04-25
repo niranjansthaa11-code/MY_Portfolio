@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-color: #080808;
+    --second-bg-color: #101010;
+    --text-color: #fff;
+    --main-color: #ea580c;
+
+    /* Extra colour */
+    --parchment: #FDF6E3;
+    --old-paper: #F5EDD6;
+    --worn-beige: #EEE3C5;
+    --dry-sand: #D9C9A3;
+ /* Extra text color */
+    --ink-deep: #2C1A0E;
+    --ink-sepia: #4A3523;
+    --ink-faded: #7A6340;
+    --ink-aged: #9A7E55;
+}
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1.5rem 15%;
+    display: flex;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+
+}
+
+#menu-icon {
+    font-size: 3.5rem;
+    color: var(--main-color);
+    display: NONE;
+}
+
+.logo {
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.logo:hover {
+    color: #FDF6E3;
+    transform: scale(1.06);
+}
+
+span{
+    background: linear-gradient(270deg,
+    #C8860A 10%,
+    #E85D04 55%, #DC2F02 100%);
+    background-clip: text;
+    color:transparent;
+}
+.navbar a{
+    font-size: 1.8rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left:4rem;
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+
+}
+.navbar a:hover{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+
+}
+.contact-btn{
+    font-size: 1.8rem;
+    padding: 0.5rem 2rem;
+    border-radius: 3rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: var(--ink-deep);
+    border:none;
+    text-wrap: nowrap;
+}
+.contact-btn:hover{
+    transform: scale(1.05);
+}
