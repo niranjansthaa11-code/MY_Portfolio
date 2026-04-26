@@ -110,3 +110,92 @@ span{
 .contact-btn:hover{
     transform: scale(1.05);
 }
+section{
+    min-height: 100vh;
+    padding: 10rem 15%;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 15rem;
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+.home-content h1{
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    line-height: 1;
+}
+.home-content h1 span{
+    font-size: 8rem;;
+
+}
+.home-content h3{
+    font-size: 4rem;
+    margin:1rem 0;
+    align-self: center;
+}
+.home-content p{
+    font-size: 1.5rem;
+    color: var(--dry-sand);
+    line-height: 1.8;
+}
+.home-image img{
+    width: 25vw;
+    border-radius: 50%;
+    box-shadow:0 0 25px var(--main-color);
+}
+.home-image img:hover {
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color),
+                0 0 100px var(--main-color);
+}
+.social-icons a{
+    display: inline-flex ;
+    font-size: 3rem;
+    align-items: center;
+    padding: 1rem;
+    background: transparent;
+    border: 2px solid var(--worn-beige);
+    border-radius: 50%;
+    color: var(--old-paper);
+    margin: 3rem 0.5rem;
+    transition: 0.3s ease-in-out;
+}
+.social-icons a:hover{
+    background: var(--ink-deep);
+    color: var(--old-paper);
+    transform: scale(1.2)translateY(-5px);
+    box-shadow: 0 0 15px var(--ink-deep),
+                0 0 30px var(--ink-deep),
+                0 0 60px var(--ink-deep) ;
+}
+.btn-group{
+    display: flex;
+    gap:2rem;
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 3rem;
+    background-color: var(--ink-aged);
+    box-shadow:0 0 10px var(--ink-aged);
+    border-radius: 3rem;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--ink-deep);
+    opacity: 70%;
+    transition: 0.3s ease-in-out;
+}
+.btn:hover{
+    box-shadow: 0 0 8px var(--ink-aged),
+                0 0 9px var(--ink-aged),
+                0 0 10px var(--ink-aged);
+    transform:scale(1.05)translateY(-2px);
+}
